@@ -38,3 +38,5 @@ app.get('/calc', (req, res) => {
 app.listen(port, () => {
   console.log(`Calculator app running at http://localhost:${port}`);
 });
+
+module.exports = app; // 👈 This lets Jest import the app
